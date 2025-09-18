@@ -37,3 +37,21 @@ for (let product of products) {
     
 }
 //think this satisfied step 3
+
+//attempting step 4
+let customerType = [
+    {type:"senior"},
+    {type:"student"},
+    {type:"regular"},
+];
+
+if (customerType = "senior") {
+    result = products.price * (1-.2);
+    console.log(`Great, you've eanred a discount for being a ${customerType}`)
+} else if (customerType = "student") {
+    result = products.price * (1-.1);
+    console.log(`Great, you've eanred a discount for being a ${customerType}`)
+} else if (customerType = "regular") {
+    result = products.price * (1-0.5);
+    console.log(`Great, you've eanred a discount for being a ${customerType}`)
+}
