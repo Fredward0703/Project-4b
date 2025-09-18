@@ -8,22 +8,32 @@ const products = [
 ];
 
 //attempting the switch statement
-switch (products.category) {
-    case "Phone":
-    case "Washing Machine":
+for (let product of products) {
+    let discount;
+
+    switch (product.category) {
+    case "Electronics":
+        discount = .2
         console.log("Phones and Washine Machines are now 20% off");
         break;
-    case "Soccer Ball":
+    case "Sports":
+        discount = .3
         console.log("Soccer balls are now 30% off!");
         break;
-    case "Pokemon Cards":
+    case "Toys":
+        discount = .1
         console.log("Pokemon cards are now 10% off!");
         break;
-    case "T-Shirt":
+    case "Clothing":
+        discount = .5
     console.log("T-shirts are now 50% off");
         break;
 
     default:
-        console.log(`Sorry we are out of ${products.category}`);
+        discount = 0;
         break;
+    }
+    let promoPrice = product.price * (1-discount);
+    
 }
+//think this satisfied step 3
